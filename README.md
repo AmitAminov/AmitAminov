@@ -17,9 +17,10 @@
 
 I'm a data scientist and ML researcher, currently doing a research M.Sc. at the Hebrew University of Jerusalem. My bachelor's was in physics, at Bar-Ilan, through its gifted-in-math track.
 
-For a few years before grad school my job was building models that people actually acted on — first writing statistical models for the Air Force's Operations Research branch, later leading an operations-research and data-science team in Unit 8200. Some of that work was recognized with the Israel Defense Prize.
+For a few years before grad school my job was building models that people actually acted on — first leading an operations-research and data-science team in Unit 8200, later writing statistical models in the Air Force's Operations Research branch. Some of that work was recognized with the Israel Defense Prize, the highest award in Israel defence establishment.
 
-One habit stuck from all of it: don't trust a number until you know how it came out. So a project of mine usually starts with a dull baseline and a train/test split that can't leak, and only earns a fancier model once those are in place.
+One habit stuck from all of it: don't trust a number until you know how it came out. So a project of mine usually starts with formalizing the problem and looking for standard\open source solutions\conventions. 
+Another think many researchers miss is defining a baseline and a train/test split that can't leak, and only earns a fancier model once those are in place.
 
 ## 🔬 What I'm working on
 
