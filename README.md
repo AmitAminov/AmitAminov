@@ -33,7 +33,7 @@ Another think many researchers miss is defining a baseline and a train/test spli
 
 | Project | What it shows |
 |---|---|
-| **[Generated Formal Theorem Proofs](https://github.com/AmitAminov/tactic-priors)** | A goal-blind 16,850-parameter tactic-frequency Unigram model proves **26.2%** of miniF2F-test vs **49.6%** for a ~7B neural prover at the *same* search budget — a floor provers are rarely measured against (at 2021 SOTA GPT-f produced 29% success rate, comparable to the baseline). |
+| **[Generated Formal Theorem Proofs](https://github.com/AmitAminov/tactic-priors)** | A goal-blind 16,850-parameter tactic-frequency Unigram model proves **26.2%** of miniF2F-test vs **49.6%** for a ~7B neural prover at the *same* search budget — a floor provers are rarely measured against (in 2021, SOTA GPT-f produced 29% success rate, comparable to the baseline). |
 | **[Room Occupancy](https://github.com/AmitAminov/room-occupancy)** | How a shuffled split fabricates skill on sensor time series (macro-F1 inflated 21–62 pts); under an honest chronological holdout a simple QDA (~0.77) transfers while tree ensembles don't. |
 | **[Gaussian Geometry](https://github.com/AmitAminov/gaussian-geometry)** | Three widely-taught covariance "facts" turned into exact, unit-tested statements — including that the "1σ" ellipse holds only **~39%** of the mass in 2D, not 68%. |
 | **[Decision Boundary Atlas](https://github.com/AmitAminov/decision-boundary-atlas)** | SVM overfitting made visible as geometry: one kernel-width sweep fragments the boundary into **282** memorized islands exactly as test accuracy turns over. |
