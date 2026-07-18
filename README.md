@@ -38,7 +38,7 @@ Another think many researchers miss is defining a baseline and a train/test spli
 | **[Gaussian Geometry](https://github.com/AmitAminov/gaussian-geometry)** | Three widely-taught covariance "facts" turned into exact, unit-tested statements — including that the "1σ" ellipse holds only **~39%** of the mass in 2D, not 68%. |
 | **[Decision Boundary Atlas](https://github.com/AmitAminov/decision-boundary-atlas)** | SVM overfitting made visible as geometry: one kernel-width sweep fragments the boundary into **282** memorized islands exactly as test accuracy turns over. |
 | **[Agentic Research Advisor](https://github.com/AmitAminov/agentic-research-advisor)** | An autonomous paper-reproduction harness graded on the artifacts it produces, not the agent's self-report — honest negatives are first-class. |
-| **[Technical Interviewer](https://github.com/AmitAminov/technical-interviewer)** | Voice and video-driven, **offline-first** technical AI interviewer. |
+| **[Technical Interviewer](https://github.com/AmitAminov/technical-interviewer)** | Voice and motion-driven, **offline-first** technical AI interviewer. |
 | **[TripWise](https://github.com/AmitAminov/tripwise)** | Couples' trip-planning as a decision-integrity problem — blind-rate-then-reveal enforced by **Postgres row-level security + triggers**, not the UI. *Built quickly with an AI-assisted (vibe-coding) workflow to plan an autumn trip to Italy with my girlfriend.* |
 
 <div align="center">
