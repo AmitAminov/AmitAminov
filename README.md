@@ -24,8 +24,8 @@ Another thing I emphasize is defining a baseline and a train, test and validaito
 
 ## 🔬 What I'm working on
 
-- **Formal reasoning** — fine-tuning LLMs to prove theorems in **Lean 4** with GRPO, rewarded by the Lean kernel's accept-or-reject, measured against goal-blind frequency baselines.
-- **Rigorous evaluation** — chronological splits over shuffled ones, frequency-table baselines, artifact-scored reproductions, closed forms over Monte-Carlo intuition.
+- **Formal reasoning** — reading a frozen **Lean 4** prover's internal states mid-proof to predict, early, which attempts will never close the goal, with every label settled by the Lean kernel rather than a proof server.
+- **Rigorous evaluation** — chronological splits over shuffled ones, verifier-checked verdicts over a scorer's say-so, negative results reported as negative, artifact-scored reproductions, closed forms over Monte-Carlo intuition.
 - **LLMs & agentic pipelines** — evaluation harnesses that score what a run actually produced on disk, not what the agent claims.
 - **Statistics & operations research** — experimental design, uncertainty, optimization, and resource-allocation modeling.
 
@@ -33,7 +33,7 @@ Another thing I emphasize is defining a baseline and a train, test and validaito
 
 | Project | What it shows |
 |---|---|
-| **[Generated Formal Theorem Proofs](https://github.com/AmitAminov/tactic-priors)** | A goal-blind 16,850-parameter tactic-frequency Unigram model proves **26.2%** of miniF2F-test vs **49.6%** for a ~7B neural prover at the *same* search budget — a floor provers are rarely measured against (in 2021, SOTA GPT-f produced 29% success rate, comparable to the baseline). |
+| **[Internal-State Probes for Kernel-Verified Theorem Proving](https://github.com/amitaminov-huji/Internal-State-Probes-for-Kernel-Verified-Theorem-Proving)** | My M.Sc. thesis: probes under **3M** parameters read a frozen Goedel-Prover-V2's hidden states and predict Lean-kernel failure at **ROC-AUC 0.89–0.92** — still **0.64–0.79** from only the first 250–4,000 generated tokens, where a token counter sits at chance. Steering generation on that signal is reported as a *negative* result. |
 | **[Room Occupancy](https://github.com/AmitAminov/room-occupancy)** | How a shuffled split fabricates skill on sensor time series (macro-F1 inflated 21–62 pts); under an honest chronological holdout a simple QDA (~0.77) transfers while tree ensembles don't. |
 | **[Gaussian Geometry](https://github.com/AmitAminov/gaussian-geometry)** | Three widely-taught covariance "facts" turned into exact, unit-tested statements — including that the "1σ" ellipse holds only **~39%** of the mass in 2D, not 68%. |
 | **[Decision Boundary Atlas](https://github.com/AmitAminov/decision-boundary-atlas)** | SVM overfitting made visible as geometry: one kernel-width sweep fragments the boundary into **282** memorized islands exactly as test accuracy turns over. |
@@ -42,8 +42,8 @@ Another thing I emphasize is defining a baseline and a train, test and validaito
 | **[TripWise](https://github.com/AmitAminov/tripwise)** | Couples' trip-planning as a decision-integrity problem — blind-rate-then-reveal enforced by **Postgres row-level security + triggers**, not the UI. *Built quickly with an AI-assisted (vibe-coding) workflow to plan an autumn trip to Italy with my girlfriend.* |
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AmitAminov/tactic-priors/main/figures/fig2_headline_comparison.png" width="640" alt="Bar chart: a goal-blind frequency sampler proves 26.2% of miniF2F-test versus 49.6% for a 7B neural prover under the same best-first search budget." />
-  <br><sub>A goal-blind baseline vs a ~7B neural prover at an identical best-first search budget.</sub>
+  <img src="https://amitaminov.github.io/figures/early_window_auroc.png" width="640" alt="Two line charts, 8B and 32B: MLP and LSTM probes predict proof failure with ROC-AUC rising from about 0.65 to 0.85 using only the first 250 to 4,000 generated tokens, while the tokens-so-far feature stays at chance." />
+  <br><sub>Failure prediction from the first N generated tokens: probes on the prover&rsquo;s internal state vs the tokens-so-far baseline, which stays at chance.</sub>
 </div>
 
 ## 🛠️ Tech I work with
