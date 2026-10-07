@@ -42,8 +42,8 @@ Another thing I emphasize is defining a baseline and a train, test and validaito
 | **[TripWise](https://github.com/AmitAminov/tripwise)** | Couples' trip-planning as a decision-integrity problem — blind-rate-then-reveal enforced by **Postgres row-level security + triggers**, not the UI. *Built quickly with an AI-assisted (vibe-coding) workflow to plan an autumn trip to Italy with my girlfriend.* |
 
 <div align="center">
-  <img src="https://amitaminov.github.io/figures/early_window_auroc.png" width="640" alt="Two line charts, 8B and 32B: MLP and LSTM probes predict proof failure with ROC-AUC rising from about 0.65 to 0.85 using only the first 250 to 4,000 generated tokens, while the tokens-so-far feature stays at chance." />
-  <br><sub>Failure prediction from the first N generated tokens: probes on the prover&rsquo;s internal state vs the tokens-so-far baseline, which stays at chance.</sub>
+  <img src="https://amitaminov.github.io/figures/early_window_auroc.png" width="640" alt="Two line charts, 8B and 32B: MLP and LSTM probes predict proof failure with ROC-AUC rising from about 0.65 to 0.85 using only the first 250 to 4,000 generated tokens, while the tokens-so-far feature stays at chance within those early windows." />
+  <br><sub>Failure prediction from the first N generated tokens: probes on the prover&rsquo;s internal state vs the tokens-so-far baseline, which stays at chance in those early windows and only becomes predictive once an attempt has ended.</sub>
 </div>
 
 ## 🛠️ Tech I work with
