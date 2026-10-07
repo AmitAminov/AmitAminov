@@ -17,10 +17,10 @@
 
 I'm a data scientist and ML researcher, currently doing a research M.Sc. at the Hebrew University of Jerusalem. My bachelor's was in physics, at Bar-Ilan, through its gifted-in-math track.
 
-For a few years before grad school my job was building models that people actually acted on — first leading an operations-research and data-science team in Unit 8200, later writing statistical models in the Air Force's Operations Research branch. Some of that work was recognized with the Israel Defense Prize, the highest award in Israel defence establishment.
+For a few years before grad school my job was building models that people actually acted on — first leading an operations-research and data-science team in Unit 8200, later writing statistical models in the Air Force's Operations Research branch. Some of that work was recognized with the Israel Defense Prize, the highest award in Israel’s defense establishment.
 
-One habit stuck from all of it: don't trust a number until you know how it came out. So a project of mine usually starts with formalizing the problem and looking for standard\open source solutions\conventions. 
-Another thing I emphasize is defining a baseline and a train, test and validaiton split that can't leak, and may reward the fancier model.
+One habit stuck from all of it: don't trust a number until you know how it came out. So a project of mine usually starts with formalizing the problem and looking for standard / open-source solutions and conventions. 
+Another thing I emphasize is defining a baseline and a train, test and validation split that can't leak, and may reward the fancier model.
 
 ## 🔬 What I'm working on
 
@@ -33,7 +33,7 @@ Another thing I emphasize is defining a baseline and a train, test and validaito
 
 | Project | What it shows |
 |---|---|
-| **[Internal-State Probes for Kernel-Verified Theorem Proving](https://github.com/amitaminov-huji/Internal-State-Probes-for-Kernel-Verified-Theorem-Proving)** | My M.Sc. thesis: probes under **3M** parameters read a frozen Goedel-Prover-V2's hidden states and predict Lean-kernel failure at **ROC-AUC 0.89–0.92** — still **0.64–0.79** from only the first 250–4,000 generated tokens, where a token counter sits at chance. Steering generation on that signal is reported as a *negative* result. |
+| **[Internal-State Probes for Kernel-Verified Theorem Proving](https://github.com/amitaminov-huji/Internal-State-Probes-for-Kernel-Verified-Theorem-Proving)** | My M.Sc. thesis: probes under **3M** parameters read a frozen Goedel-Prover-V2's hidden states and predict Lean-kernel failure at **ROC-AUC 0.89–0.92** in cross-validation (**0.81–0.86** on an unseen olympiad benchmark) — still **0.64–0.79** from only the first 250–4,000 generated tokens, where a token counter sits at chance. Steering generation on that signal is reported as a *negative* result. |
 | **[Room Occupancy](https://github.com/AmitAminov/room-occupancy)** | How a shuffled split fabricates skill on sensor time series (macro-F1 inflated 21–62 pts); under an honest chronological holdout a simple QDA (~0.77) transfers while tree ensembles don't. |
 | **[Gaussian Geometry](https://github.com/AmitAminov/gaussian-geometry)** | Three widely-taught covariance "facts" turned into exact, unit-tested statements — including that the "1σ" ellipse holds only **~39%** of the mass in 2D, not 68%. |
 | **[Decision Boundary Atlas](https://github.com/AmitAminov/decision-boundary-atlas)** | SVM overfitting made visible as geometry: one kernel-width sweep fragments the boundary into **282** memorized islands exactly as test accuracy turns over. |
@@ -42,7 +42,7 @@ Another thing I emphasize is defining a baseline and a train, test and validaito
 | **[TripWise](https://github.com/AmitAminov/tripwise)** | Couples' trip-planning as a decision-integrity problem — blind-rate-then-reveal enforced by **Postgres row-level security + triggers**, not the UI. *Built quickly with an AI-assisted (vibe-coding) workflow to plan an autumn trip to Italy with my girlfriend.* |
 
 <div align="center">
-  <img src="https://amitaminov.github.io/figures/early_window_auroc.png" width="640" alt="Two line charts, 8B and 32B: MLP and LSTM probes predict proof failure with ROC-AUC rising from about 0.65 to 0.85 using only the first 250 to 4,000 generated tokens, while the tokens-so-far feature stays at chance within those early windows." />
+  <img src="https://amitaminov.github.io/figures/early_window_auroc.png" width="640" alt="Two line charts, 8B and 32B: MLP and LSTM probes predict proof failure with ROC-AUC from about 0.64 to 0.79 using only the first 250 to 4,000 generated tokens, while the tokens-so-far feature stays at chance within those early windows." />
   <br><sub>Failure prediction from the first N generated tokens: probes on the prover&rsquo;s internal state vs the tokens-so-far baseline, which stays at chance in those early windows and only becomes predictive once an attempt has ended.</sub>
 </div>
 
